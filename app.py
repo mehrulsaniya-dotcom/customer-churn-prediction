@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-file_path =
+file_path = "European_Bank.csv"
 os.path.join(os.path.dirname(__file__),
 "European_Bank.csv")
 df = pd.read_csv(file_path)
