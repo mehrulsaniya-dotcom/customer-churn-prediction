@@ -15,7 +15,7 @@ st.write("Financial Analytics | Machine Learning Project")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("European Bank.csv")
+    return pd.read_csv("European Bank (1).csv")
 
 try:
     df = load_data()
