@@ -1,6 +1,10 @@
 
 import streamlit as st
 import pandas as pd
+file_path =
+os.path.joi(os.path.dirname(__file__),
+            "European_Bank.csv")
+df = pd.read_csv(file_path)
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -15,7 +19,7 @@ st.write("Financial Analytics | Machine Learning Project")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("European Bank (1).csv")
+    return pd.read_csv("European_Bank.csv")
 
 try:
     df = load_data()
